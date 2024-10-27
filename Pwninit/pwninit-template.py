@@ -4,10 +4,10 @@ from pwn import *
 
 {bindings}
 
-gs = ('''
+gs = '''
 init-pwndbg
 continue
-''')
+'''
 
 context.binary = {bin_name}
 
@@ -24,6 +24,8 @@ r = conn()
 def main():
 
     # good luck pwning :)
+
+    #gdb.attach([elf.path], gdbscript=gs)
 
     r.interactive()
 
