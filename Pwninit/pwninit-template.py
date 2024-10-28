@@ -25,7 +25,7 @@ def main():
 
     # good luck pwning :)
 
-    #gdb.attach([elf.path], gdbscript=gs)
+    #gdb.attach(r, gdbscript=gs)
 
     r.interactive()
 
