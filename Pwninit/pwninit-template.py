@@ -19,15 +19,15 @@ def conn():
     else:
         return remote("addr", 1337)
 
-r = conn()
+io = conn()
 
 def main():
 
     # good luck pwning :)
 
-    #gdb.attach(r, gdbscript=gs)
+    #gdb.attach(io, gdbscript=gs)
 
-    r.interactive()
+    io.interactive()
 
 if __name__ == "__main__":
     main()
