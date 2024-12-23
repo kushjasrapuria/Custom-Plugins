@@ -10,6 +10,7 @@ continue
 '''
 
 context.binary = {bin_name}
+#context.log_level = "debug"
 
 def conn():
     if args.GDB:
